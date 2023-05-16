@@ -1,0 +1,428 @@
+.content-main {
+  display: flex;
+  margin-top: 7.2rem;
+  padding: 7rem 10rem;
+  justify-content: space-between;
+}
+
+button {
+  cursor: pointer;
+}
+.main-lockup {
+  display: flex;
+  flex-direction: column;
+  width: 80rem;
+}
+
+.main-lockup div {
+  display: flex;
+}
+
+.main-heading {
+  margin-bottom: 5rem;
+}
+
+.main-heading h1 {
+  font-size: 5.6rem;
+  font-weight: 600;
+  color: white;
+}
+
+.deleted-price {
+  position: relative;
+}
+
+.deleted-price:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 23%;
+  transform: translateY(-50%);
+  width: 19rem;
+  height: 0.8rem;
+  background-color: rgba(255, 0, 0, 1);
+}
+
+.main-heading span {
+  font-size: 6.4rem;
+  font-weight: 500;
+  font-family: "Roboto";
+  /* color: #0096ff; */
+}
+
+.main-pointer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5.2rem;
+}
+
+.main-pointer div {
+  width: 6rem;
+  height: 6rem;
+}
+
+.main-pointer p {
+  padding-left: 6.8rem;
+}
+
+.main-pointer p,
+.main-pointer span {
+  font-size: 3.2rem;
+  font-family: "Roboto";
+  font-weight: 400;
+  color: white;
+}
+
+.main-pointer span {
+  color: #0096ff;
+  font-weight: 600;
+}
+
+/* Form style will come here */
+.form-main {
+  display: flex;
+  flex-direction: column;
+  padding: 3.2rem 2.4rem;
+  gap: 2.8rem;
+  width: 55rem;
+  height: fit-content;
+  background-color: white;
+  border-radius: 0.8rem;
+}
+
+.form-main div,
+.form-main p {
+  color: rgba(60, 72, 82, 1);
+  font-family: "Roboto";
+}
+
+.form-progress-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.progress-bar-stage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-bar-stage div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.8rem;
+  height: 3.8rem;
+  border-radius: 1.9rem;
+  background-color: #0096ff;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: white;
+  font-family: "Roboto";
+}
+
+.progress-bar-stage p {
+  padding-top: 1rem;
+  font-size: 1.6rem;
+  font-family: "Roboto";
+}
+
+.form-header {
+  font-size: 2.4rem;
+  font-weight: 600;
+  font-family: "Roboto";
+  text-align: center;
+}
+
+.input-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.radio-container,
+.disabled-container {
+  display: flex;
+  position: relative;
+}
+.recommendation,
+.disabled-recommendation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0.1rem;
+  left: 6rem;
+  width: 12rem;
+  height: 1.6rem;
+  border-radius: 0rem 0rem 0.4rem 0.4rem;
+  background-color: rgba(71, 186, 104, 1);
+}
+
+.disabled-recommendation {
+  background-color: rgba(247, 113, 113, 1);
+}
+
+.recommendation p,
+.disabled-recommendation p {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: "Roboto";
+}
+
+.radio-container label,
+.disabled-container label {
+  border: 0.2rem solid #bebebe;
+  border-radius: 0.4rem;
+  padding: 1.6rem 1.6rem 1.6rem 6rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.radio-container input {
+  appearance: none;
+  position: absolute;
+  top: 0.8rem;
+  left: 0.8rem;
+  transform: translate(50%, 50%);
+}
+
+.radio-container input:after {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  content: "";
+  height: 2.4rem;
+  width: 2.4rem;
+  border: 0.2rem solid rgba(190, 190, 190, 1);
+  border-radius: 100%;
+}
+
+.radio-container input:checked:after {
+  border: none;
+  height: 2.7rem;
+  width: 2.7rem;
+  background-image: url("../assets/tick.png");
+}
+
+.radio-container input:checked + label {
+  background-color: rgba(215, 237, 221, 1);
+  border: 0.2rem solid rgba(71, 186, 104, 1);
+}
+
+.dummy-div {
+  position: absolute;
+  top: 0.8rem;
+  left: 0.8rem;
+  transform: translate(50%, 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.7rem;
+  height: 2.7rem;
+  background-color: white;
+  border-radius: 100%;
+  border: 0.2rem solid rgba(190, 190, 190, 1);
+}
+
+.dummy-div div {
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 100%;
+  background-color: rgba(190, 190, 190, 1);
+}
+
+.disabled-option {
+  background-color: rgba(231, 231, 231, 1);
+}
+
+.disabled-container p,
+.disabled-container div {
+  color: rgba(190, 190, 190, 1);
+}
+
+.sub-month {
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-family: "Roboto";
+}
+
+.sub-total {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.sub-total span {
+  padding-left: 0.6rem;
+}
+
+.sub-total p {
+  font-size: 1.2rem;
+  font-family: "Roboto";
+}
+
+.sub-total p:first-child span {
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-family: "Roboto";
+}
+
+.sub-total p:last-child span {
+  font-size: 1rem;
+  font-family: "Roboto";
+  color: rgba(190, 190, 190, 1);
+  font-weight: 500;
+}
+
+.summary-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1.6rem 0rem;
+  gap: 1.2rem;
+  width: 100%;
+  border-top: 0.2rem solid #bebebe;
+}
+
+.fee-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 2.4rem;
+}
+
+.fee-container p {
+  font-size: 1.6rem;
+  font-family: "Roboto";
+}
+
+.fee-container p:last-child {
+  font-weight: 500;
+}
+.alert-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem 2.4rem;
+  gap: 0.4rem;
+  width: 100%;
+  border-radius: 0.8rem;
+  border: 0.2rem solid #de4313;
+  background: linear-gradient(
+    135deg,
+    rgba(222, 67, 19, 0.2) 0%,
+    rgba(222, 67, 19, 0.2) 0.75%,
+    rgba(222, 67, 19, 0.2) 2.92%,
+    rgba(222, 68, 20, 0.2) 6.37%,
+    rgba(223, 69, 21, 0.2) 10.97%,
+    rgba(223, 72, 22, 0.2) 16.59%,
+    rgba(224, 75, 24, 0.2) 23.1%,
+    rgba(225, 80, 27, 0.2) 30.37%,
+    rgba(227, 86, 31, 0.2) 38.27%,
+    rgba(229, 94, 36, 0.2) 46.66%,
+    rgba(231, 104, 43, 0.2) 55.41%,
+    rgba(235, 117, 51, 0.2) 64.39%,
+    rgba(238, 132, 60, 0.2) 73.47%,
+    rgba(243, 149, 71, 0.2) 82.52%,
+    rgba(248, 169, 84, 0.2) 91.41%,
+    rgba(254, 193, 99, 0.2) 100%
+  );
+}
+
+.sub-alert-1 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.sub-alert-1 p {
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-family: "Roboto";
+}
+
+.sub-alert-1 p:first-child {
+  color: #de4313;
+}
+
+.sub-alert-2 {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.sub-alert-2 div {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub-alert-2 p {
+  font-size: 1.4rem;
+  font-family: "Roboto";
+  color: #de4313;
+}
+
+.summary-text-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 2.4rem;
+}
+
+.summary-text-container p,
+strong {
+  font-size: 1.6rem;
+  font-family: "Roboto";
+}
+
+.summary-text-container p:last-child {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.6rem;
+  width: 100%;
+}
+
+.button-container button {
+  display: flex;
+  width: 100%;
+  height: 5.6rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-family: "Roboto";
+  padding: 1rem 4.2rem;
+  border-radius: 0.4rem;
+}
+
+.button-container button:first-child {
+  background-color: white;
+  border: 0.2rem solid #f77171;
+  color: #f77171;
+}
+
+.button-container button:last-child {
+  background-color: #47ba68;
+  border: 0.2rem solid #47ba68;
+  color: white;
+}
+
+.razorpay {
+  height: 4.3rem;
+}
+
+.razorpay img {
+  height: 100%;
+}
